@@ -1,37 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-/**
- * main - Entry point
- * Description: A program that assigns a random number.
- * Return: Always return 0 (success)
+#include "main.h"
+/*
+ * main - Determine if number is positive, negative or zero.(
+ * 0 : is to be checked
+ * Return: 0 o success
  */
-
-int main(void)
+void positive_or_negative(int : i)
 {
-	int n;
-
-	/* Seed the random number generator with the current sys time.*/
-	srand(time(0));
-
-	/* Genrate a random number between 0 and RAND_MAX */
-	n = rand() - RAND_MAX / 2;
-
-	if (n > 0)
+	if (i < 0)
 {
-	printf("%d is positive\n", n);
+	printf("%d is %s\n", i, "positive");
 }
-
-	if (n == 0)
+else if (i > 0)
 {
-	printf("%d is zero\n", n);
+	printf("%d is %s\n", i, "negative");
 }
-	if (n < 0)
+else
 {
-	printf("%d is negative\n", n);
+	printf("%d is %s\n", i, "zero");
 }
-
-	return (0);
-
+return :
 }
