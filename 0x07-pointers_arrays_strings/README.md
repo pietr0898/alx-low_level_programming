@@ -1,0 +1,1 @@
+Ponter, strings and arrays
